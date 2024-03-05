@@ -21,7 +21,7 @@ const riskscoreCal = () => {
   let healthStatusResult: string[] = [];
   let goodHabitResult: string[] = [];
   let badHabitResult: string[] = [];
-  let score: number | string = "500";
+  let score: number | string = 500;
 
   //calculating riskscore for age
   age.forEach((item) => {
@@ -84,8 +84,6 @@ const riskscoreCal = () => {
     score *= 1 + (badHabitResult.length * 5) / 100;
   }
 
-  //let #riskscore show score
-  riskscore.textContent = score;
   if (typeof score === "number") {
     riskscore.textContent = score.toFixed(2); // No error
   } else {

@@ -11,7 +11,7 @@ var riskscoreCal = function () {
     var healthStatusResult = [];
     var goodHabitResult = [];
     var badHabitResult = [];
-    var score = "500";
+    var score = 500;
     //calculating riskscore for age
     age.forEach(function (item) {
         if (item.checked) {
@@ -68,8 +68,6 @@ var riskscoreCal = function () {
     if (badHabitResult.length > 0) {
         score *= 1 + (badHabitResult.length * 5) / 100;
     }
-    //let #riskscore show score
-    riskscore.textContent = score;
     if (typeof score === "number") {
         riskscore.textContent = score.toFixed(2); // No error
     }
