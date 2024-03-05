@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insurance app</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <h1>Insurance App</h1>
+
+    <div class="form">
+      <form>
+        <p class="text">Easy to use! Calculate your insurance riskscore now:</p>
+        <div>
+          <h2>1. Your name:</h2>
+          <input type="text" id="name" name="name" />
+        </div>
+
+        <h2>2. Your age:</h2>
+        <p class="text">
+          * Base score is 500 and score will be increased depending of the age.
+        </p>
+
+        <div>
+          <input type="radio" id="age1" name="age" value="0-18" />
+          <label for="age1">0 - 18 years old ( ↑ 0%)</label>
+        </div>
+
+        <div>
+          <input type="radio" id="age2" name="age" value="18-25" />
+          <label for="age2">18 - 25 years old ( ↑ 10%)</label>
+        </div>
+
+        <div>
+          <input type="radio" id="age3" name="age" value="26-35" />
+          <label for="age3">26 - 35 years old ( ↑ 30%)</label>
+        </div>
+
+        <div>
+          <input type="radio" id="age4" name="age" value="36-45" />
+          <label for="age4">36 - 45 years old ( ↑ 60%)</label>
+        </div>
+
+        <div>
+          <input type="radio" id="age5" name="age" value="46-55" />
+          <label for="age5">46 - 55 years old ( ↑ 100%)</label>
+        </div>
+
+        <div>
+          <input type="radio" id="age6" name="age" value="56-65" />
+          <label for="age6">56 - 65 years old ( ↑ 150%)</label>
+        </div>
+
+        <div>
+          <input type="radio" id="age7" name="age" value="above66" />
+          <label for="age7">above 66 years old ( ↑ 210%)</label>
+        </div>
+
+        <h2>3. Your current health status:</h2>
+        <p class="text">
+          * Please select one or more of the following options to indicate your
+          health status. Each healt condition will Increase of 1% per score.
+        </p>
+
+        <div>
+          <input
+            type="checkbox"
+            id="status1"
+            name="status"
+            value="Hypertension" />
+          <label for="Hypertension"> Hypertension ( ↑ 1%)</label>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="status2"
+            name="status"
+            value="High Blood Sugar" />
+          <label for="High Blood Sugar"> High Blood Sugar ( ↑ 1%)</label>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="status3"
+            name="status"
+            value="Overweight" />
+          <label for="Overweight"> Overweight ( ↑ 1%)</label>
+        </div>
+
+        <h2>4. Your habits:</h2>
+        <p class="text">
+          * You can select one or more of the following options to specify your
+          habits.
+        </p>
+
+        <ul>
+          <li class="options">
+            Good Health Habits (↓ 5% for every good habit) :
+          </li>
+        </ul>
+
+        <div>
+          <input
+            type="checkbox"
+            id="goodHabit1"
+            name="goodHabit"
+            value="exercise" />
+          <label for="goodHabit1">
+            Regular Exercise: Engaging in physical activity and exercise on a
+            regular basis.</label
+          >
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="goodHabit2"
+            name="goodHabit"
+            value="diet" />
+          <label for="goodHabit2">
+            Healthy Diet: Maintaining a balanced and nutritious diet.</label
+          >
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="goodHabit3"
+            name="goodHabit"
+            value="sleep" />
+          <label for="goodHabit3">
+            Adequate Sleep: Ensuring you get enough restful sleep each
+            night.</label
+          >
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="goodHabit4"
+            name="goodHabit"
+            value="stress-free" />
+          <label for="goodHabit4">
+            Stress Management: Practicing stress-reduction techniques such as
+            meditation or yoga.</label
+          >
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="goodHabit5"
+            name="goodHabit"
+            value="alcohol-moderate" />
+          <label for="goodHabit5">
+            Moderate Alcohol Consumption: Consuming alcohol in moderation, if at
+            all.</label
+          >
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="goodHabit6"
+            name="goodHabit"
+            value="smoke-free" />
+          <label for="goodHabit6">
+            Non-Smoking: Not smoking or using tobacco products.</label
+          >
+        </div>
+
+        <ul>
+          <li class="options">Unhealthy Habits (↑ 5% for every bad habit) :</li>
+        </ul>
+
+        <div>
+          <input type="checkbox" id="badHabit1" name="badHabit" value="smoke" />
+          <label for="badHabit1">
+            Smoking: Regularly smoking cigarettes or using tobacco
+            products.</label
+          >
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="badHabit2"
+            name="badHabit"
+            value="alcohol" />
+          <label for="badHabit2">
+            Excessive Alcohol Consumption: Consuming alcohol in large quantities
+            or frequently.</label
+          >
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="badHabit3"
+            name="badHabit"
+            value="lackOfExercise" />
+          <label for="badHabit3">
+            Lack of Exercise: Leading a sedentary lifestyle with little to no
+            physical activity.</label
+          >
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="badHabit4"
+            name="badHabit"
+            value="poorDiet" />
+          <label for="badHabit4">
+            Poor Diet: Consistently consuming unhealthy foods high in sugar,
+            fats, and processed ingredients.</label
+          >
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="badHabit5"
+            name="badHabit"
+            value="lackOfSleep" />
+          <label for="badHabit5">
+            Inadequate Sleep: Not getting enough sleep or having irregular sleep
+            patterns.</label
+          >
+        </div>
+
+        <div>
+          <input type="checkbox" id="badHabit6" name="badHabit" value="drug" />
+          <label for="badHabit6">
+            Drug Use: Engaging in the use of illegal drugs or misusing
+            prescription medications.</label
+          >
+        </div>
+
+        <p class="bottom-text">
+          Your insurance riskscore is: <span id="riskscore"> 0</span>
+        </p>
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

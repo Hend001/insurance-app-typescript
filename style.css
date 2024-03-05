@@ -1,0 +1,35 @@
+* {
+    margin: 2px;
+    padding: 1px;
+}
+
+body {
+    background-image: linear-gradient(to right top, skyblue, rgb(57, 57, 213));
+    background-attachment: fixed;
+    font-family: 'lato', sans-serif;
+    text-align: left;
+}
+
+h1 {
+    color: yellowgreen;
+    font-size: 3rem;
+}
+
+h2 {
+    color: aquamarine;
+    margin-top: 1rem;
+}
+
+.text {
+    color: #505017;
+}
+
+.options {
+    color: rgb(20, 108, 108);
+    font-weight: 600;
+}
+
+.bottom-text {
+    font-size: 2rem;
+    color: rgb(230, 208, 40);
+}
